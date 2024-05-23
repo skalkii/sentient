@@ -6,6 +6,7 @@
   bottom: rem(82);
   right: 0;
   padding: rem(21);
+  z-index: 9;
   @include sm-max {
     display: none;
   }

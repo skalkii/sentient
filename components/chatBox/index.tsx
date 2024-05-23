@@ -8,7 +8,7 @@ import classNames from "classnames";
 
 const ChatBox = () => {
   const [chat, setChat] = useState("");
-  const [scrolled] = useScroll();
+  const { scrolled } = useScroll();
 
   return (
     <div

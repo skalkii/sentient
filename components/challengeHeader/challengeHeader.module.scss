@@ -14,17 +14,18 @@
     padding: rem(40);
     justify-content: space-between;
   }
+  z-index: 9;
 }
 
 .detailsWrapper {
   display: flex;
   flex-direction: column;
   gap: rem(20);
-  text-align: justify;
   h3 {
-    font-size: rem(28);
-    line-height: rem(32);
+    font-size: rem(22);
+    line-height: rem(26);
     letter-spacing: rem(-1);
+    font-weight: 600;
     @include md {
       font-size: rem(32);
       line-height: rem(36);
@@ -52,9 +53,12 @@
   align-items: center;
   justify-content: space-between;
   & > p {
-    font-size: rem(14);
+    font-size: rem(16);
+    line-height: rem(18);
+    font-weight: 400;
     @include md {
       font-size: rem(18);
+      line-height: rem(20);
     }
   }
   @include md {
@@ -74,15 +78,23 @@
   border: rem(1) solid #c3c3c3;
   padding: rem(5 10);
   p, span {
-    font-size: rem(12);
+    font-size: rem(10);
+    line-height: rem(12);
+    font-weight: 400;
+    @include md {
+      font-size: rem(12);
+      line-height: rem(14);
+    }
   }
 }
 
 .prizeContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: rem(10);
   @include md {
     flex-direction: column;
+    gap: rem(35);
   }
 }
 
@@ -99,7 +111,7 @@
 }
 
 .prizeSingle {
-  width: 32%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,7 +122,18 @@
     border-radius: 50%;
     padding: rem(10);
   }
+  p {
+    font-size: rem(12);
+    line-height: rem(14);
+    font-weight: 400;
+    @include md {
+      font-size: rem(16);
+      line-height: rem(18);
+
+    }
+  }
   @include md {
+    width: 30%;
     flex-direction: row;
     width: rem(160);
     text-align: left;
@@ -126,15 +149,30 @@
 .scrolled {
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   h3 {
     text-align: left;
     max-width: 70%;
+    font-size: rem(18);
+    line-height: rem(22);
+    @include md {
+      font-size: rem(24);
+      line-height: rem(28);
+      max-width: 50%;
+
+    }
   }
   button {
-    width: rem(220) !important;
+    max-width: rem(220) !important;
+    
+    
   }
   img {
     height: rem(40);
     width: rem(40);
   }
+    @include md {
+      max-width: unset;
+      flex-wrap: nowrap;
+    }
 }

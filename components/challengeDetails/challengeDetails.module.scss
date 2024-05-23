@@ -4,13 +4,15 @@
   display: flex;
   flex-direction: column;
   gap: rem(20);
-  padding: rem(15);
+  padding: rem(40);
   font-size: rem(14);
   line-height: rem(20);
   letter-spacing: rem(-1);
   @include md {
     font-size: rem(16);
     line-height: rem(22);
+    align-items: center;
+    gap: rem(60)
   }
   
 }

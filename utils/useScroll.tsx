@@ -2,11 +2,23 @@ import { useState, useEffect } from "react";
 
 const SCROLL_THRESHOLD = 10;
 
-const useScroll = () => {
+type UseScrollReturnTypes = {
+  scrolled: boolean;
+  scrollToFocus: (id: string) => void;
+};
+
+const useScroll = (): UseScrollReturnTypes => {
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
     setScrolled(window.scrollY > SCROLL_THRESHOLD);
+  };
+
+  const scrollToFocus = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ block: "end", inline: "nearest" });
+    }
   };
 
   useEffect(() => {
@@ -18,7 +30,7 @@ const useScroll = () => {
     };
   }, []);
 
-  return [scrolled];
+  return { scrolled, scrollToFocus };
 };
 
 export default useScroll;

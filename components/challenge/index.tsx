@@ -13,12 +13,6 @@ const Challenge = ({ children }: { children: ReactNode }) => {
       <Topics topics={SPOTIFY_CHALLENGE_DATA.topics} />
       <ChallengeHeader {...SPOTIFY_CHALLENGE_DATA} />
       {children}
-      <div className={styles.topicDetailsWrapper}>
-        {SPOTIFY_CHALLENGE_DATA.topics.map((topic) => {
-          const { id } = topic;
-          return <TopicDetails key={id} {...topic} />;
-        })}
-      </div>
       <ChatBox />
     </div>
   );

@@ -15,7 +15,7 @@ const TopicDetails = ({
   return (
     <div id={id} className={styles.topicDetailsContainer}>
       <h3>{title}</h3>
-      <RichText content={description} />
+      <RichText className={styles.richText} content={description} />
       {descriptionImage ? (
         <Image src={descriptionImage} alt={"author"} height={200} width={300} />
       ) : null}

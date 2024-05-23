@@ -12,7 +12,12 @@ interface TopicsPropTypes {
 
 const Topics = ({ topics }: TopicsPropTypes) => {
   const [activeTopic, setActiveTopic] = useState("introduction");
-  const [scrolled] = useScroll();
+  const { scrolled, scrollToFocus } = useScroll();
+
+  const handleClick = (id: string) => {
+    setActiveTopic(id);
+    scrollToFocus(id);
+  };
 
   return (
     <div
@@ -24,8 +29,7 @@ const Topics = ({ topics }: TopicsPropTypes) => {
       {topics.map(({ id, titleImage, title, iconText }, index) => {
         return (
           <div
-            key={id}
-            id={id}
+            key={`topic-${id}`}
             className={classNames(
               styles.topicCard,
               [2, 3].includes(index % 4)
@@ -39,7 +43,7 @@ const Topics = ({ topics }: TopicsPropTypes) => {
                 ? { backgroundImage: `url(${titleImage})` }
                 : {}
             }
-            onClick={() => setActiveTopic(id)}
+            onClick={() => handleClick(id)}
           >
             <p style={activeTopic === id ? { opacity: 0 } : {}}>{iconText}</p>
             <p style={activeTopic === id ? { color: "white" } : {}}>{title}</p>

@@ -9,7 +9,7 @@ const ChallengeDetails = () => {
     <div className={styles.topicDetailsWrapper}>
       {SPOTIFY_CHALLENGE_DATA.topics.map((topic) => {
         const { id } = topic;
-        return <TopicDetails key={id} {...topic} />;
+        return <TopicDetails key={`topic-details-${id}`} {...topic} />;
       })}
     </div>
   );

@@ -19,7 +19,7 @@ const ChallengeHeader = ({
   description,
   prizes,
 }: ChallengeDataPropTypes) => {
-  const [scrolled] = useScroll();
+  const { scrolled } = useScroll();
   return (
     <div className={classNames(styles.challengeHeaderContainer)}>
       <div
