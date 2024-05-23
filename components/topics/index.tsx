@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styles from "./topics.module.scss";
 import { TopicType } from "@/content";
 import classNames from "classnames";
+import useScroll from "@/utils/useScroll";
 
 interface TopicsPropTypes {
   topics: TopicType[];
@@ -11,9 +12,15 @@ interface TopicsPropTypes {
 
 const Topics = ({ topics }: TopicsPropTypes) => {
   const [activeTopic, setActiveTopic] = useState("introduction");
+  const [scrolled] = useScroll();
 
   return (
-    <div className={styles.topicsContainer}>
+    <div
+      className={classNames(
+        styles.topicsContainer,
+        scrolled ? styles.scrolled : undefined
+      )}
+    >
       {topics.map(({ id, titleImage, title, iconText }, index) => {
         return (
           <div

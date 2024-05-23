@@ -40,8 +40,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-  @include md {
-    padding: rem(10);
+  h3 {
+    font-size: rem(22);
+    line-height: rem(26);
+    letter-spacing: rem(-1);
+    @include md {
+      font-size: rem(24);
+      line-height: rem(28);
+    }
   }
     
 }
@@ -62,5 +68,11 @@
   @include md {
     height: rem(100);
     width: 100%;
+  }
+}
+
+.scrolled {
+  @include sm-max {
+    display: none;
   }
 }

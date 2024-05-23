@@ -1,0 +1,12 @@
+@import "../../styles//main";
+
+.topicDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+  img {
+    height: rem(200);
+    width: rem(400);
+    object-fit: fill;
+  }
+}

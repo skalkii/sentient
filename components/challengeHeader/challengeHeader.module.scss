@@ -122,3 +122,19 @@
 .hide {
   display: none;
 }
+
+.scrolled {
+  flex-direction: row;
+  flex-wrap: wrap;
+  h3 {
+    text-align: left;
+    max-width: 70%;
+  }
+  button {
+    width: rem(220) !important;
+  }
+  img {
+    height: rem(40);
+    width: rem(40);
+  }
+}

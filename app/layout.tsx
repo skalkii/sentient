@@ -8,7 +8,11 @@ import "../styles/_main.scss";
 import classNames from "classnames";
 import styles from "./page.module.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Sentient",

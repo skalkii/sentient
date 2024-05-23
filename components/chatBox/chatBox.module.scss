@@ -1,0 +1,34 @@
+@import "../../styles//main";
+
+.chatBoxContainer {
+  display: flex;
+  position: fixed;
+  bottom: rem(82);
+  right: 0;
+  padding: rem(21);
+  @include sm-max {
+    display: none;
+  }
+  @include md {
+    bottom: 0;
+  }
+  input {
+    border-radius: rem(42);
+    background-color: colorToHex("primary-white");
+    padding: rem(24);
+    width: calc(100vw - 44px);
+    @include md {
+      width: calc(100vw - 375px);
+    }
+  }
+  button {
+    position: absolute;
+    right: rem(30);
+    top: rem(30);
+    
+  }
+}
+
+.scrolled {
+  display: flex;
+}

@@ -21,8 +21,13 @@ const ChallengeHeader = ({
 }: ChallengeDataPropTypes) => {
   const [scrolled] = useScroll();
   return (
-    <div className={styles.challengeHeaderContainer}>
-      <div className={styles.detailsWrapper}>
+    <div className={classNames(styles.challengeHeaderContainer)}>
+      <div
+        className={classNames(
+          styles.detailsWrapper,
+          scrolled ? styles.scrolled : undefined
+        )}
+      >
         <div className={styles.authorWrapper}>
           <p className={scrolled ? styles.hide : undefined}>{`By ${author}`}</p>
           <Image src={icon} alt={"author"} height={24} width={24} />

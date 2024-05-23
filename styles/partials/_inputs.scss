@@ -3,30 +3,14 @@
 
 .input,
 .inputArea {
-  background: transparent;
-  border-radius: rem(8);
-  padding: rem(8 12);
-  font-size: rem(16);
-  line-height: rem(18);
-
-  &::-webkit-outer-spin-button,
-  &::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  &[type="number"] {
-    -moz-appearance: textfield;
-  }
-
-  &.transparent {
-    border-width: rem(1);
-    border-style: solid;
-  }
+  border: rem(1) solid transparent;
+  font-size: rem(14);
+  line-height: rem(16);
+  padding: rem(14);
 
   &:disabled {
     opacity: 0.4;
     pointer-events: none;
-    color: inherit;
   }
 
   &::placeholder {
@@ -34,9 +18,9 @@
   }
 
   @include md {
-    padding: rem(12 16);
-    font-size: rem(18);
-    line-height: rem(20);
+    font-size: rem(16);
+    line-height: rem(18);
+    padding: rem(16 24);
   }
 }
 
