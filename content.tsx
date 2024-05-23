@@ -161,7 +161,7 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
           }
       More details on how the data is stored in files, and on the individual metadata fields can be found in the README file included in the dataset distribution.
       `,
-      titleImage: "/assets/images/dataset.png",
+      titleImage: "/assets/images/challengedataset.png",
       // icon: "/assets/images/introductionIcon.png",
       iconText: "🕵️",
     },
@@ -196,7 +196,7 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       A sample submission (sample_submission.csv) is included with the challenge set. The sample shows the expected format for your submission to the challenge. Also included with the challenge set is a Python script called verify_submission.py. You can use this program to verify that your submission is properly formatted. See the challenge set README file for more information on how to verify and submit your challenge results.`,
       titleImage: "/assets/images/submission.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "🚀 ",
     },
     {
       id: "task",
@@ -215,7 +215,7 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       Note that the system should also be able to cope with playlists for which no initial seed tracks are given! To assess the performance of a submission, the output track predictions are compared to the ground truth tracks ("reference set") from the original playlist.`,
       titleImage: "/assets/images/task.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "🎧",
     },
     {
       id: "evaluation",
@@ -250,15 +250,15 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       Final rankings will be computed by using the Borda Count election strategy. For each of the rankings of p participants according to R-precision, NDCG, and Recommended Songs Clicks, the top ranked system receives p points, the second system received p-1 points, and so on. The participant with the most total points wins. In the case of ties, we use top-down comparison: compare the number of 1st place positions between the systems, then 2nd place positions, and so on.`,
       titleImage: "/assets/images/evaluation.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "🖊 ",
     },
     {
       id: "rules",
       title: "Rules",
       description: `The dataset and challenge are available strictly for research and non-commercial use. You may not redistribute or make available any part or whole of this dataset. You may not use the dataset or challenge to reverse engineer any aspect of Spotify's technology, or intellectual property, nor attempt to identify any individuals from the data. As mentioned above, the dataset has been non-uniformly sampled, and is not representative of the true distribution of playlists on the Spotify platform, and must not be interpreted as such in any research or analysis performed on the dataset. Please read the full Terms and Conditions at https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge/challenge_rules carefully before participating in this challenge.`,
-      titleImage: "/assets/images/rules.png",
+      titleImage: "/assets/images/task.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "📜",
     },
     {
       id: "acknowledgements",
@@ -286,9 +286,9 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       Markus Schedl, Johannes Kepler University, Linz, Austria
       Hamed Zamani, University of Massachusetts Amherst, MA, USA
       Paul Lamere, Spotify, USA`,
-      titleImage: "/assets/images/acknowledgements.png",
+      titleImage: "/assets/images/introduction.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "💾",
     },
     {
       id: "citation",
@@ -296,9 +296,9 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       description: `To use the Spotify Million Playlist Dataset and/or your challenge results in research publications, please cite the following paper:
 
       C.W. Chen, P. Lamere, M. Schedl, and H. Zamani. Recsys Challenge 2018: Automatic Music Playlist Continuation. In Proceedings of the 12th ACM Conference on Recommender Systems (RecSys ’18), 2018.`,
-      titleImage: "/assets/images/citation.png",
+      titleImage: "/assets/images/evaluation.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "🚀 ",
     },
     {
       id: "reference",
@@ -306,9 +306,9 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       description: `For a summary of the submissions from the 2018 RecSys Challenge, read "An Analysis of Approaches Taken in the ACM RecSys Challenge 2018 for Automatic Music Playlist Continuation" by H. Zamani, M. Schedl, P. Lamere, C.W. Chen.
 
       Details on each of the top submissions, including papers, slides, and code, can be found on the RecSys Challenge 2018 website, and in the Proceedings of the ACM Recommender Systems Challenge 2018.`,
-      titleImage: "/assets/images/reference.png",
+      titleImage: "/assets/images/task.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "🖊 ",
     },
     {
       id: "contact",
@@ -318,9 +318,9 @@ export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
       Yoogottam Khandelwal
       Shivam Khandelwal
       Sharada Mohanty`,
-      titleImage: "/assets/images/contact.png",
+      titleImage: "/assets/images/challengedataset.png",
       // icon: "/assets/images/introductionIcon.png",
-      iconText: "🕵️",
+      iconText: "📜",
     },
   ],
 };

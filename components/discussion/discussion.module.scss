@@ -1,0 +1,9 @@
+@import "../../styles//main";
+
+.discussionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
