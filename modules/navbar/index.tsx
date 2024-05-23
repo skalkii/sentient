@@ -40,11 +40,12 @@ const Navbar = () => {
     <header>
       <nav className={styles.navbarContainer}>
         {NAVIGATION_ITEMS.map(({ href, icon }, index) => {
-          console.log(path, href);
           return (
             <Link className={styles.navSingle} key={`nav-${index}`} href={href}>
               <Image
-                className={path !== href ? styles.darkFill : undefined}
+                className={
+                  path !== href && href !== "/" ? styles.darkFill : undefined
+                }
                 width={30}
                 height={30}
                 src={icon}

@@ -5,6 +5,8 @@ import Navbar from "@/modules/navbar";
 
 import "../styles/global.css";
 import "../styles/_main.scss";
+import classNames from "classnames";
+import styles from "./page.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={classNames(inter.className, styles.backgroundColor)}>
         <Navbar />
         {children}
       </body>
