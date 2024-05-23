@@ -1,0 +1,11 @@
+$colors: (
+  "primary-gray": #faf3ea,
+  "secondary-gray": #f3eadd,
+  "ternary-gray": #e4d9c9,
+  "primary-black": #212222,
+  "primary-white": #ffffff,
+) !default;
+
+@function colorToHex($colorname) {
+  @return map-get($colors,$colorname);
+}

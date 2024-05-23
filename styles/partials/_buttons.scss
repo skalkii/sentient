@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+.button {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  font-size: rem(14);
+  line-height: rem(16);
+  padding: rem(14 22);
+  border-radius: rem(100);
+
+  @include md {
+    font-size: rem(16);
+    font-size: rem(16);
+    line-height: rem(18);
+    padding: rem(16 24);
+  }
+
+  &.solid {
+    background-color: colorToHex("primary-blue");
+    color: colorToHex("primary-white");
+  }
+
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+}
