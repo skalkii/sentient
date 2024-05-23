@@ -1,0 +1,124 @@
+@import "../../styles//main";
+
+.challengeHeaderContainer {
+  background-color: colorToHex("secondary-gray");
+  padding: rem(20);
+  position: sticky;
+  top: rem(20);
+  border-radius: rem(20);
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  @include md {
+    flex-direction: row;
+    padding: rem(40);
+    justify-content: space-between;
+  }
+}
+
+.detailsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+  text-align: justify;
+  h3 {
+    font-size: rem(28);
+    line-height: rem(32);
+    letter-spacing: rem(-1);
+    @include md {
+      font-size: rem(32);
+      line-height: rem(36);
+    }
+  }
+  & > p {
+    font-size: rem(14);
+    line-height: rem(16);
+    letter-spacing: rem(-1);
+    @include md {
+      font-size: rem(16);
+      line-height: rem(18);
+    }
+  }
+  @include md {
+    text-align: left;
+    max-width: 65%;
+    gap: rem(30);
+  }
+}
+
+.authorWrapper {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+  justify-content: space-between;
+  & > p {
+    font-size: rem(14);
+    @include md {
+      font-size: rem(18);
+    }
+  }
+  @include md {
+    justify-content: flex-start;
+  }
+}
+
+.viewsWrapper {
+  display: flex;
+  align-items: center;
+  background-color: colorToHex("ternary-gray");
+  border-radius: rem(40);
+  gap: rem(2);
+  &>img:nth-child(3) {
+    margin-left: rem(10);
+  }
+  border: rem(1) solid #c3c3c3;
+  padding: rem(5 10);
+  p, span {
+    font-size: rem(12);
+  }
+}
+
+.prizeContainer {
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    flex-direction: column;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  gap: rem(15);
+  button:first-child {
+    width: rem(220);
+    @include md {
+      width: rem(320);
+    }
+  }
+}
+
+.prizeSingle {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: rem(10);
+  img {
+    background-color: colorToHex("ternary-gray");
+    border-radius: 50%;
+    padding: rem(10);
+  }
+  @include md {
+    flex-direction: row;
+    width: rem(160);
+    text-align: left;
+    gap: rem(15);
+  }
+
+}
+
+.hide {
+  display: none;
+}

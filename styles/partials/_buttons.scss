@@ -7,18 +7,17 @@
   text-align: center;
   font-size: rem(14);
   line-height: rem(16);
-  padding: rem(14 22);
+  padding: rem(14);
   border-radius: rem(100);
 
   @include md {
-    font-size: rem(16);
     font-size: rem(16);
     line-height: rem(18);
     padding: rem(16 24);
   }
 
   &.solid {
-    background-color: colorToHex("primary-blue");
+    background-color: colorToHex("primary-black");
     color: colorToHex("primary-white");
   }
 

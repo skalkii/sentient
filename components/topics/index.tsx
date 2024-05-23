@@ -15,7 +15,6 @@ const Topics = ({ topics }: TopicsPropTypes) => {
   return (
     <div className={styles.topicsContainer}>
       {topics.map(({ id, titleImage, title, iconText }, index) => {
-        console.log(activeTopic === id);
         return (
           <div
             key={id}
