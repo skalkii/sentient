@@ -1,21 +1,28 @@
-type ChallengeDataPropTypes = {
+export type TopicType = {
+  id: string;
+  title: string;
+  description: string;
+  descriptionImage?: string;
+  titleImage: string;
+  iconText: string;
+};
+
+export type PrizeType = {
+  icon: string;
+  label: string;
+};
+
+export interface ChallengeDataPropTypes {
   title: string;
   description: string;
   icon: string;
   author: string;
-  prizes: { icon: string; label: string }[];
+  prizes: PrizeType[];
   views: string;
   shares: number;
   likes: number;
-  topics: {
-    id: string;
-    title: string;
-    description: string;
-    descriptionImage?: string;
-    titleImage: string;
-    iconText: string;
-  }[];
-};
+  topics: TopicType[];
+}
 
 export const SPOTIFY_CHALLENGE_DATA: ChallengeDataPropTypes = {
   title: "Spotify Million Playlist Dataset Challenge",

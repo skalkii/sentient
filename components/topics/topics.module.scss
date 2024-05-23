@@ -1,0 +1,66 @@
+@import "../../styles//main";
+
+.topicsContainer {
+  position: fixed;
+  bottom: rem(82);
+  left: 0;
+  overflow: scroll;
+  height: rem(130);
+  width: 100%;
+  display: flex;
+  padding: rem(10);
+  gap: rem(10);
+  background-color: colorToHex("secondary-gray");
+  @include md {
+    bottom: unset;
+    flex-wrap: wrap;
+    top: 0;
+    left: rem(76);
+    height: 100%;
+    width: rem(260);
+    
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.topicCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: rem(18);
+  background-color: colorToHex("primary-white");
+  min-width: rem(130);
+  padding: rem(15);
+  word-break: break-word;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  @include md {
+    padding: rem(10);
+  }
+    
+}
+.square {
+  @include md {
+    height: rem(200);
+    width: 100%;
+  }
+}
+.squareSmall {
+  @include md {
+    height: rem(100);
+    width: rem(115);
+    min-width: rem(115);
+  }
+}
+.rectangle {
+  @include md {
+    height: rem(100);
+    width: 100%;
+  }
+}

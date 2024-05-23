@@ -4,7 +4,6 @@
   min-height: 100vh;
   margin-left: unset;
   margin-bottom: rem(82);
-  border: 1px solid red;
   @include md {
     // same as navbar width
     margin-left: rem(76);
@@ -22,4 +21,5 @@
 
 .backgroundColor {
   background-color: colorToHex("primary-gray");
+  position: relative;
 }
