@@ -1,0 +1,41 @@
+@import "../../styles//main";
+
+.navbarContainer {
+  background-color: colorToHex("primary-black");
+  padding: rem(24);
+  display: flex;
+  gap: rem(24);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: unset;
+  z-index: 99;
+  
+  @include md {
+    bottom: unset;
+    top: 0;
+    flex-direction: column;
+    width: rem(76);
+    gap: rem(40);
+    height: 100vh;
+  }
+}
+
+.navSingle {
+  cursor: pointer;
+
+  &:last-child {
+    margin-left: auto;
+  }
+  @include md {
+    &:last-child {
+      margin-top: auto;
+    }
+  }
+}
+
+.darkFill {
+    -webkit-filter: invert(0.7);
+    filter: invert(0.7);
+}

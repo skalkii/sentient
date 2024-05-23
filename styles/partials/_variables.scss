@@ -4,6 +4,7 @@ $colors: (
   "ternary-gray": #e4d9c9,
   "primary-black": #212222,
   "primary-white": #ffffff,
+  "secondary-black": #454545,
 ) !default;
 
 @function colorToHex($colorname) {
